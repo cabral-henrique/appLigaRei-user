@@ -1,0 +1,7 @@
+{
+  "name": "ligarei",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,20 @@
+<ion-tabs color='primary'>
+  <ion-tab-bar color='primary' #logado id="logado" slot="bottom" style="display: none;">
+    <ion-tab-button tab="inicio" id="btninicio">
+      <ion-icon name="home"></ion-icon>
+      <ion-label>Início</ion-label>
+    </ion-tab-button>
+    <ion-tab-button tab="ranking">
+      <ion-icon name="people"></ion-icon>
+      <ion-label>Ranking</ion-label>
+    </ion-tab-button>
+    <ion-tab-button tab="convocar">
+      <ion-icon name="lock-closed-outline"></ion-icon>
+      <ion-label>Convocar</ion-label>
+    </ion-tab-button>
+    <ion-tab-button (click)="onclickMenu();">
+      <ion-icon name="menu"></ion-icon>
+      <ion-label>Mais</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>

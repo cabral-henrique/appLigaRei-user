@@ -1,0 +1,78 @@
+<ion-content>
+  <div class="centerHeader">
+    <img src="../../assets/images/liga rei dos penaltis_Prancheta 1.png" style="width: 30%;" />
+  </div>
+  <ion-grid>
+    <ion-row justify-content-center align-items-center>
+      <ion-col col-sm-8 col-md-6 col-lg-4 col-xl-4>
+        <ion-grid>
+          <ion-row>
+            <ion-col size="7">
+              <ion-item lines='none'>
+                <ion-label position="stacked">CEP</ion-label>
+                <ion-input class="borderInput" type="tel" pattern="[0-9]*" maxlength="8" name="cep" [(ngModel)]="CEP">
+                </ion-input>
+              </ion-item>
+            </ion-col>
+            <ion-col size="5">
+              <ion-item lines='none' style="margin-top: 30px; margin-left: -15px;">
+                <ion-button expand="block" slot="start" color="light" (click)="onPesquisar()">
+                  <ion-icon slot="icon-only" name="search"></ion-icon>
+                </ion-button>
+                <ion-button expand="block" color="light" (click)="ongeo()">
+                  <ion-icon slot="icon-only" name="compass-outline"></ion-icon>
+                </ion-button>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="9">
+              <ion-item lines='none'>
+                <ion-label position="stacked">Logradouro</ion-label>
+                <ion-input class="borderInput" type="text" name="loradouro" [(ngModel)]="Logradouro"></ion-input>
+              </ion-item>
+            </ion-col>
+            <ion-col size="3">
+              <ion-item lines='none'>
+                <ion-label position="stacked">Nº</ion-label>
+                <ion-input class="borderInput" type="text" name="numero" [(ngModel)]="Numero"></ion-input>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="6">
+              <ion-item lines='none'>
+                <ion-label position="stacked">Cidade</ion-label>
+                <ion-input class="borderInput" type="text" name="cidade" [(ngModel)]="Cidade"></ion-input>
+              </ion-item>
+            </ion-col>
+            <ion-col size="6">
+              <ion-item lines='none'>
+                <ion-label position="stacked">Bairro</ion-label>
+                <ion-input class="borderInput" type="text" name="bairro" [(ngModel)]="Bairro"></ion-input>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="9">
+              <ion-item lines='none'>
+                <ion-label position="stacked">Complemento</ion-label>
+                <ion-input class="borderInput" type="text" name="complemento" [(ngModel)]="Complemento"></ion-input>
+              </ion-item>
+            </ion-col>
+            <ion-col size="3">
+              <ion-item lines='none'>
+                <ion-label position="stacked">UF</ion-label>
+                <ion-input class="borderInput" type="text" name="uf" [(ngModel)]="UF"></ion-input>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+
+        <br />
+        <ion-button color="success" fill="solid" expand="block" (click)="OnclickCadastrar()">Proximo</ion-button>
+        <ion-button color="danger" fill="solid" expand="block" (click)="OnclickCancelar()">Cancelar</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

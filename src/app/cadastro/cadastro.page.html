@@ -1,0 +1,40 @@
+<ion-content>
+  <div class="centerHeader">
+    <img src="../../assets/images/liga rei dos penaltis_Prancheta 1.png" style="width: 30%;" />
+  </div>
+  <ion-grid>
+    <ion-row justify-content-center align-items-center>
+      <ion-col col-sm-8 col-md-6 col-lg-4 col-xl-4>
+        <ion-list lines="none">
+          <ion-item>
+            <ion-label position="stacked">
+              Nome Completo
+            </ion-label>
+            <ion-input class="borderInput" [(ngModel)]="nome"> </ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="stacked">
+              Como quer ser conhecido?(Apelido)
+            </ion-label>
+            <ion-input class="borderInput" [(ngModel)]="nome"> </ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="stacked">
+              email
+            </ion-label>
+            <ion-input class="borderInput" type="email" [(ngModel)]="email"> </ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="stacked">
+              Senha
+            </ion-label>
+            <ion-input class="borderInput" type="password" [(ngModel)]="senha"> </ion-input>
+          </ion-item>
+        </ion-list>
+        <br />
+        <ion-button color="success" fill="solid" expand="block" (click)="OnclickCadastrar()">Proximo</ion-button>
+        <ion-button color="danger" fill="solid" expand="block" (click)="OnclickCancelar()">Cancelar</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
