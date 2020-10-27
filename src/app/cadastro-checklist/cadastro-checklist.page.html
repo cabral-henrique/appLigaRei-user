@@ -5,6 +5,41 @@
   <ion-grid>
     <ion-row justify-content-center align-items-center>
       <ion-col col-sm-8 col-md-6 col-lg-4 col-xl-4>
+<ion-radio-group value="tendencia">
+  <ion-list-header>
+    <ion-label>Tendência</ion-label>
+  </ion-list-header>
+  <ion-item>
+    <ion-label>Destro</ion-label>
+    <ion-radio slot="start" value="Destro"></ion-radio>
+  </ion-item>
+  <ion-item>
+    <ion-label>Canhoto</ion-label>
+    <ion-radio slot="start" value="Canhoto"></ion-radio>
+  </ion-item>
+  <ion-item>
+    <ion-label>Ambidestro</ion-label>
+    <ion-radio slot="start" value="Ambidestro"></ion-radio>
+  </ion-item>
+</ion-radio-group>
+
+<ion-radio-group value="posicao">
+  <ion-list-header>
+    <ion-label>Posição</ion-label>
+  </ion-list-header>
+  <ion-item>
+    <ion-label>Goleiro</ion-label>
+    <ion-radio slot="start" value="Goleiro"></ion-radio>
+  </ion-item>
+  <ion-item>
+    <ion-label>Batedor</ion-label>
+    <ion-radio slot="start" value="Batedor"></ion-radio>
+  </ion-item>
+</ion-radio-group>
+      </ion-col>
+    </ion-row>
+    <ion-row justify-content-center align-items-center>
+      <ion-col col-sm-8 col-md-6 col-lg-4 col-xl-4>
 
         <ion-button color="success" fill="solid" expand="block" (click)="OnclickCadastrar()">Finalizar Cadastro
         </ion-button>

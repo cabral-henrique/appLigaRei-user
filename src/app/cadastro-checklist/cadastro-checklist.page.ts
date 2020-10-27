@@ -21,5 +21,8 @@ export class CadastroChecklistPage implements OnInit {
     this.navCtrl.navigateRoot('/tabs/inicio');
 
   }
+  async OnclickCancelar() {
+    this.navCtrl.navigateRoot('/tabs/login');
+  }
 
 }

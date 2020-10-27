@@ -15,5 +15,8 @@ export class CadastroPage implements OnInit {
   OnclickCadastrar() {
     this.navCtrl.navigateForward('/cadastro-dados');
   }
+  async OnclickCancelar() {
+    this.navCtrl.navigateRoot('/tabs/login');
+  }
 
 }

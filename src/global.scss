@@ -28,7 +28,11 @@
 
 /***Componets*/
 ion-toolbar {
-  color: white;
+  color: #ffffff !important;
+  background-color: #cebd27 !important;
+}
+.toolbar-background{
+  background-color: #cebd27 !important;
 }
 
 ion-label {
@@ -66,15 +70,6 @@ p{
   width: 100%;
   height: 9em;
   margin-top: 60%;
-}
-.titulo {
-  margin-bottom: 1.4rem !important;
-  margin-top: 1.4rem !important;
-  text-align: center;
-  color: #efc2b3 !important;
-  margin-top: 10px;
-  font-weight: 300;
-  font-size: 1.5rem;
 }
 .h4 {
   color: #724a72;

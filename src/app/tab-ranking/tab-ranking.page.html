@@ -1,9 +1,186 @@
-<ion-header>
+<ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>tabRanking</ion-title>
+    <ion-title>
+      Classificação
+    </ion-title>
+  </ion-toolbar>
+  <ion-toolbar color="light">
+    <ion-segment value="all" color="tertiary" scrollable="true" mode="ios" [(ngModel)]="segmentModel"
+      (ionChange)="segmentChanged($event)">
+      <ion-segment-button value="Goleiros">
+       <img src="../../assets/images/goleiro black.png" style="width: 55px;">
+      </ion-segment-button>
+      <ion-segment-button value="Batedores">
+        <img src="../../assets/images/batedor black.png" style="width: 40px;">
+      </ion-segment-button>
+    </ion-segment>
   </ion-toolbar>
 </ion-header>
+<ion-content [fullscreen]="true">
+  <div *ngIf="segmentModel === 'Batedores'">
+    <ion-list lines="none">
+    <ion-item>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="1" class="ion-align-self-center">
+            1
+          </ion-col>
+          <ion-col size="9" class="ion-align-self-start">
+            <ion-item>
+              <ion-avatar slot="start">
+                <img src="../../assets/images/profile.png">
+              </ion-avatar>
+              <ion-label>
+                <h2>Joao Gilberto</h2>
+              </ion-label>
+            </ion-item>
+          </ion-col>
+          <ion-col size="2" class="ion-align-self-center ion-align-self-end">
+            25
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+    <ion-item>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="1" class="ion-align-self-center">
+            2
+          </ion-col>
+          <ion-col size="9" class="ion-align-self-start">
+            <ion-item>
+              <ion-avatar slot="start">
+                <img src="../../assets/images/profile.png">
+              </ion-avatar>
+              <ion-label>
+                <h2>Joao Gilberto</h2>
+              </ion-label>
+            </ion-item>
+          </ion-col>
+          <ion-col size="2" class="ion-align-self-center ion-align-self-end">
+            20
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+    <ion-item>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="1" class="ion-align-self-center">
+            3
+          </ion-col>
+          <ion-col size="9" class="ion-align-self-start">
+            <ion-item>
+              <ion-avatar slot="start">
+                <img src="../../assets/images/profile.png">
+              </ion-avatar>
+              <ion-label>
+                <h2>Joao Gilberto</h2>
+              </ion-label>
+            </ion-item>
+          </ion-col>
+          <ion-col size="2" class="ion-align-self-center ion-align-self-end">
+            20
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+    </ion-list>
+  </div>
 
-<ion-content>
+  <div *ngIf="segmentModel === 'Goleiros'">
+    <ion-list lines="none">
+      <ion-item>
+        <ion-grid>
+          <ion-row>
+            <ion-col size="1" class="ion-align-self-center">
+              1
+            </ion-col>
+            <ion-col size="9" class="ion-align-self-start">
+              <ion-item>
+                <ion-avatar slot="start">
+                  <img src="../../assets/images/profile.png">
+                </ion-avatar>
+                <ion-label>
+                  <h2>Joao Gilberto</h2>
+                </ion-label>
+              </ion-item>
+            </ion-col>
+            <ion-col size="2" class="ion-align-self-center ion-align-self-end">
+              25
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+      <ion-item>
+        <ion-grid>
+          <ion-row>
+            <ion-col size="1" class="ion-align-self-center">
+              1
+            </ion-col>
+            <ion-col size="9" class="ion-align-self-start">
+              <ion-item>
+                <ion-avatar slot="start">
+                  <img src="../../assets/images/profile.png">
+                </ion-avatar>
+                <ion-label>
+                  <h2>Joao Gilberto</h2>
+                </ion-label>
+              </ion-item>
+            </ion-col>
+            <ion-col size="2" class="ion-align-self-center ion-align-self-end">
+              25
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+      <ion-item>
+        <ion-grid>
+          <ion-row>
+            <ion-col size="1" class="ion-align-self-center">
+              2
+            </ion-col>
+            <ion-col size="9" class="ion-align-self-start">
+              <ion-item>
+                <ion-avatar slot="start">
+                  <img src="../../assets/images/profile.png">
+                </ion-avatar>
+                <ion-label>
+                  <h2>Joao Gilberto</h2>
+                </ion-label>
+              </ion-item>
+            </ion-col>
+            <ion-col size="2" class="ion-align-self-center ion-align-self-end">
+              20
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+      <ion-item>
+        <ion-grid>
+          <ion-row>
+            <ion-col size="1" class="ion-align-self-center">
+              3
+            </ion-col>
+            <ion-col size="9" class="ion-align-self-start">
+              <ion-item>
+                <ion-avatar slot="start">
+                  <img src="../../assets/images/profile.png">
+                </ion-avatar>
+                <ion-label>
+                  <h2>Joao Gilberto</h2>
+                </ion-label>
+              </ion-item>
+            </ion-col>
+            <ion-col size="2" class="ion-align-self-center ion-align-self-end">
+              20
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+    </ion-list>
+
+
+  </div>
 
 </ion-content>

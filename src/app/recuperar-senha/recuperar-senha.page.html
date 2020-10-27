@@ -1,9 +1,30 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>recuperarSenha</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
+  <div class="centerHeader">
+    <img src="../../assets/images/liga rei dos penaltis_Prancheta 1.png" style="width: 30%;" />
+  </div>
+  <h6 class="titulo">Recuperar Senha</h6>
+  <ion-grid>
+    <ion-row justify-content-center align-items-center>
+      <ion-col col-sm-8 col-md-6 col-lg-4 col-xl-4>
+        <ion-list lines="none">
+          <ion-item>
+            <ion-label position="stacked">CPF</ion-label>
+            <ion-input type="tel" [brmasker]="{mask:'000.000.000-00', len:14,type:'num'}" [(ngModel)]="cpf"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="stacked">E-mail</ion-label>
+            <ion-input [(ngModel)]="email"></ion-input>
+          </ion-item>
+        </ion-list>
 
+        <br />
+        <ion-button expand="block" fill="solid" color="primary" (click)="OnclickEnviar()">
+          Enviar
+        </ion-button>
+        <ion-button expand="block" fill="solid" color="rosa" (click)="OnclickCancelar()">
+          Cancelar
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
